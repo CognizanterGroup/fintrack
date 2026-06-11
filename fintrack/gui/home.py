@@ -168,7 +168,7 @@ class HomeWindow(QWidget):
 
         cl.addWidget(self._field_label("user", "Username"))
         self.user_input = QLineEdit()
-        self.user_input.setPlaceholderText("e.g. princewill")
+        self.user_input.setPlaceholderText("e.g. username")
         cl.addWidget(self.user_input)
         cl.addSpacing(4)
 
