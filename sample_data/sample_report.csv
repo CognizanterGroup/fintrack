@@ -1,0 +1,37 @@
+FinTrack report,2026-06-10T16:26:34
+
+TRANSACTIONS
+date,kind,category,amount,description
+2025-06-22,expense,entertainment,14000.0,Concert ticket
+2025-06-20,income,investment,40000.0,Dividend payout
+2025-06-18,expense,business,25000.0,Software subscriptions
+2025-06-15,income,gift,25000.0,Birthday gift
+2025-06-12,expense,utilities,16000.0,Internet + electricity
+2025-06-10,expense,transportation,20000.0,Ride-hailing
+2025-06-09,income,freelance,120000.0,Logo + brand kit
+2025-06-06,expense,food,47000.0,Groceries + dining
+2025-06-03,expense,rent,120000.0,Apartment rent
+2025-06-01,income,salary,480000.0,June salary (raise)
+2025-05-25,expense,education,30000.0,Online course
+2025-05-22,income,business,60000.0,Side shop sales
+2025-05-19,expense,entertainment,12000.0,Cinema + dinner
+2025-05-14,expense,health,22000.0,Pharmacy + checkup
+2025-05-08,expense,food,38000.0,Groceries
+2025-05-03,expense,rent,120000.0,Apartment rent
+2025-05-01,income,salary,450000.0,May salary
+2025-04-20,expense,utilities,15000.0,Electricity
+2025-04-18,income,freelance,90000.0,Website project
+2025-04-12,expense,transportation,18000.0,Fuel
+2025-04-06,expense,food,42000.0,Groceries
+2025-04-03,expense,rent,120000.0,Apartment rent
+2025-04-01,income,salary,450000.0,April salary
+
+SUMMARY
+currency,₦
+total_income,1715000.0
+total_expense,659000.0
+total_savings,695000.0
+balance,1056000.0
+debt_owed_to_others,200000.0
+debt_owed_to_user,0.0
+net_worth,856000.0

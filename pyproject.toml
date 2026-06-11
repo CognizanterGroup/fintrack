@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fintrack"
+version = "1.0.0"
+description = "FinTrack - a personal finance manager with a CLI and a PySide6 desktop GUI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "FinTrack" }]
+keywords = ["finance", "budget", "cli", "gui", "pyside6", "personal-finance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Office/Business :: Financial",
+    "License :: OSI Approved :: MIT License",
+]
+
+# Core dependency for the CLI. The desktop GUI needs PySide6 (the `gui` extra).
+dependencies = [
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+gui = ["PySide6>=6.6"]
+all = ["PySide6>=6.6"]
+dev = ["pytest>=7.0"]
+# For building the standalone desktop app (see .github/workflows/release.yml).
+build = ["PySide6>=6.6", "pyinstaller>=6.0", "pillow>=10.0"]
+
+[project.urls]
+Homepage = "https://github.com/CognizanterGroup/fintrack"
+Repository = "https://github.com/CognizanterGroup/fintrack"
+Issues = "https://github.com/CognizanterGroup/fintrack/issues"
+Download = "https://github.com/CognizanterGroup/fintrack/releases/latest"
+
+[project.scripts]
+# `fintrack` launches the GUI by default; `--cli` switches to the terminal UI.
+fintrack = "fintrack.__main__:main"
+fintrack-cli = "fintrack.cli.app:main"
+fintrack-gui = "fintrack.gui.app:main"
+
+[tool.setuptools.packages.find]
+include = ["fintrack*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

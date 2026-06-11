@@ -1,0 +1,66 @@
+# Builds standalone desktop apps for Windows, macOS and Linux with PyInstaller
+# and attaches them to a GitHub Release whenever a version tag is pushed:
+#
+#     git tag v1.0.0
+#     git push origin v1.0.0
+#
+# The README's download link (…/releases/latest) then serves these binaries.
+name: Release desktop app
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            artifact: FinTrack-windows
+            icon: assets/icon.ico
+          - os: macos-latest
+            artifact: FinTrack-macos
+            icon: assets/icon.png
+          - os: ubuntu-latest
+            artifact: FinTrack-linux
+            icon: assets/icon.png
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install ".[gui]" pyinstaller pillow
+
+      - name: Build with PyInstaller
+        run: >
+          pyinstaller --noconfirm --windowed --name FinTrack
+          --icon ${{ matrix.icon }}
+          packaging/fintrack_entry.py
+
+      - name: Package (Windows)
+        if: runner.os == 'Windows'
+        run: Compress-Archive -Path dist/FinTrack -DestinationPath ${{ matrix.artifact }}.zip
+
+      - name: Package (macOS)
+        if: runner.os == 'macOS'
+        run: ditto -c -k --keepParent dist/FinTrack.app ${{ matrix.artifact }}.zip
+
+      - name: Package (Linux)
+        if: runner.os == 'Linux'
+        run: tar -czf ${{ matrix.artifact }}.tar.gz -C dist FinTrack
+
+      - name: Upload to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ matrix.artifact }}.zip
+            ${{ matrix.artifact }}.tar.gz
+          generate_release_notes: true

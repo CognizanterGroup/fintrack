@@ -1,0 +1,33 @@
+====================================================
+  FINTRACK FINANCIAL REPORT
+  User: demo
+  Generated: 2026-06-10T16:26:34
+====================================================
+
+SUMMARY
+----------------------------------------------------
+  Total income      : ₦1,715,000.00
+  Total expenses    : ₦659,000.00
+  Total savings     : ₦695,000.00
+  Remaining balance : ₦1,056,000.00
+  Owed to others    : ₦200,000.00
+  Owed to you       : ₦0.00
+  Net worth         : ₦856,000.00
+
+FINANCIAL HEALTH
+----------------------------------------------------
+  Score: 90.7/100  Grade A (Excellent)
+    - Strong savings rate (20%+ of income kept).
+    - Outstanding debt owed: 200,000.00.
+    - Average goal progress: 57%.
+
+SPENDING BY CATEGORY
+----------------------------------------------------
+  rent            ₦360,000.00
+  food            ₦127,000.00
+  transportation  ₦38,000.00
+  utilities       ₦31,000.00
+  education       ₦30,000.00
+  entertainment   ₦26,000.00
+  business        ₦25,000.00
+  health          ₦22,000.00

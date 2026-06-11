@@ -1,0 +1,404 @@
+{
+  "generated_at": "2026-06-10T16:26:34",
+  "user": "demo",
+  "currency": "₦",
+  "summary": {
+    "currency": "₦",
+    "total_income": 1715000.0,
+    "total_expense": 659000.0,
+    "total_savings": 695000.0,
+    "balance": 1056000.0,
+    "debt_owed_to_others": 200000.0,
+    "debt_owed_to_user": 0.0,
+    "net_worth": 856000.0
+  },
+  "health_score": {
+    "score": 90.7,
+    "grade": "A",
+    "label": "Excellent",
+    "components": {
+      "savings": {
+        "points": 40.0,
+        "max": 40
+      },
+      "budget": {
+        "points": 20.0,
+        "max": 20
+      },
+      "debt": {
+        "points": 22.1,
+        "max": 25
+      },
+      "goals": {
+        "points": 8.6,
+        "max": 15
+      }
+    },
+    "notes": [
+      "Strong savings rate (20%+ of income kept).",
+      "Outstanding debt owed: 200,000.00.",
+      "Average goal progress: 57%."
+    ]
+  },
+  "spending_analysis": {
+    "habits": {
+      "highest_category": {
+        "category": "rent",
+        "amount": 360000.0
+      },
+      "lowest_category": {
+        "category": "health",
+        "amount": 22000.0
+      },
+      "average_expense": 43933.33,
+      "category_count": 8,
+      "by_category": {
+        "rent": 360000.0,
+        "food": 127000.0,
+        "transportation": 38000.0,
+        "utilities": 31000.0,
+        "education": 30000.0,
+        "entertainment": 26000.0,
+        "business": 25000.0,
+        "health": 22000.0
+      }
+    },
+    "by_category": {
+      "rent": 360000.0,
+      "food": 127000.0,
+      "transportation": 38000.0,
+      "utilities": 31000.0,
+      "education": 30000.0,
+      "entertainment": 26000.0,
+      "business": 25000.0,
+      "health": 22000.0
+    },
+    "by_source": {
+      "salary": 1380000.0,
+      "freelance": 210000.0,
+      "business": 60000.0,
+      "investment": 40000.0,
+      "gift": 25000.0
+    },
+    "trends": {
+      "2025-04": {
+        "income": 540000.0,
+        "expense": 195000.0,
+        "net": 345000.0
+      },
+      "2025-05": {
+        "income": 510000.0,
+        "expense": 222000.0,
+        "net": 288000.0
+      },
+      "2025-06": {
+        "income": 665000.0,
+        "expense": 242000.0,
+        "net": 423000.0
+      }
+    }
+  },
+  "transactions": [
+    {
+      "kind": "expense",
+      "amount": 14000.0,
+      "category": "entertainment",
+      "description": "Concert ticket",
+      "occurred_on": "2025-06-22",
+      "id": "6aa452f1e598",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 40000.0,
+      "category": "investment",
+      "description": "Dividend payout",
+      "occurred_on": "2025-06-20",
+      "id": "d2708b2d6581",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 25000.0,
+      "category": "business",
+      "description": "Software subscriptions",
+      "occurred_on": "2025-06-18",
+      "id": "f73945a47faa",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 25000.0,
+      "category": "gift",
+      "description": "Birthday gift",
+      "occurred_on": "2025-06-15",
+      "id": "9253d11ebe8b",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 16000.0,
+      "category": "utilities",
+      "description": "Internet + electricity",
+      "occurred_on": "2025-06-12",
+      "id": "6131a4bd2c40",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 20000.0,
+      "category": "transportation",
+      "description": "Ride-hailing",
+      "occurred_on": "2025-06-10",
+      "id": "181a38273bbc",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 120000.0,
+      "category": "freelance",
+      "description": "Logo + brand kit",
+      "occurred_on": "2025-06-09",
+      "id": "2fe474dd25b0",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 47000.0,
+      "category": "food",
+      "description": "Groceries + dining",
+      "occurred_on": "2025-06-06",
+      "id": "65b5f50a7d38",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 120000.0,
+      "category": "rent",
+      "description": "Apartment rent",
+      "occurred_on": "2025-06-03",
+      "id": "c336f3e05deb",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 480000.0,
+      "category": "salary",
+      "description": "June salary (raise)",
+      "occurred_on": "2025-06-01",
+      "id": "0b7a84b2d317",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 30000.0,
+      "category": "education",
+      "description": "Online course",
+      "occurred_on": "2025-05-25",
+      "id": "6c364b09c585",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 60000.0,
+      "category": "business",
+      "description": "Side shop sales",
+      "occurred_on": "2025-05-22",
+      "id": "040ec098cfc6",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 12000.0,
+      "category": "entertainment",
+      "description": "Cinema + dinner",
+      "occurred_on": "2025-05-19",
+      "id": "5af42f5f27d9",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 22000.0,
+      "category": "health",
+      "description": "Pharmacy + checkup",
+      "occurred_on": "2025-05-14",
+      "id": "b82d01df4343",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 38000.0,
+      "category": "food",
+      "description": "Groceries",
+      "occurred_on": "2025-05-08",
+      "id": "08b27f9a6484",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 120000.0,
+      "category": "rent",
+      "description": "Apartment rent",
+      "occurred_on": "2025-05-03",
+      "id": "4f6d5bb80188",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 450000.0,
+      "category": "salary",
+      "description": "May salary",
+      "occurred_on": "2025-05-01",
+      "id": "f3434d27ec6d",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 15000.0,
+      "category": "utilities",
+      "description": "Electricity",
+      "occurred_on": "2025-04-20",
+      "id": "027c5af70a68",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 90000.0,
+      "category": "freelance",
+      "description": "Website project",
+      "occurred_on": "2025-04-18",
+      "id": "8767ca26aaa6",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 18000.0,
+      "category": "transportation",
+      "description": "Fuel",
+      "occurred_on": "2025-04-12",
+      "id": "4be061c0fcc0",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 42000.0,
+      "category": "food",
+      "description": "Groceries",
+      "occurred_on": "2025-04-06",
+      "id": "d63caf979d98",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "expense",
+      "amount": 120000.0,
+      "category": "rent",
+      "description": "Apartment rent",
+      "occurred_on": "2025-04-03",
+      "id": "30ea400beae3",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "kind": "income",
+      "amount": 450000.0,
+      "category": "salary",
+      "description": "April salary",
+      "occurred_on": "2025-04-01",
+      "id": "76ec3a63ddba",
+      "created_at": "2026-06-10T16:26:34"
+    }
+  ],
+  "budgets": [
+    {
+      "month": "2025-06",
+      "category": "overall",
+      "limit": 360000.0,
+      "id": "8dcab086f371",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "month": "2025-06",
+      "category": "food",
+      "limit": 40000.0,
+      "id": "f79ca0da66b7",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "month": "2025-06",
+      "category": "transportation",
+      "limit": 25000.0,
+      "id": "d29f29604682",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "month": "2025-06",
+      "category": "entertainment",
+      "limit": 20000.0,
+      "id": "67d8c88a37b9",
+      "created_at": "2026-06-10T16:26:34"
+    }
+  ],
+  "goals": [
+    {
+      "name": "New Laptop",
+      "target": 600000.0,
+      "saved": 220000.0,
+      "deadline": "2025-12-31",
+      "status": "active",
+      "id": "5f9b5fc43523",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "name": "Emergency Fund",
+      "target": 500000.0,
+      "saved": 175000.0,
+      "deadline": "2026-06-30",
+      "status": "active",
+      "id": "4997d58b24fd",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "name": "Holiday Trip",
+      "target": 300000.0,
+      "saved": 300000.0,
+      "deadline": "2025-11-01",
+      "status": "achieved",
+      "id": "f5202f0303dc",
+      "created_at": "2026-06-10T16:26:34"
+    }
+  ],
+  "debts": [
+    {
+      "direction": "borrowed",
+      "counterparty": "Ada",
+      "amount": 80000.0,
+      "amount_paid": 30000.0,
+      "due_date": "2025-05-15",
+      "status": "overdue",
+      "description": "Short-term loan",
+      "id": "5fba9dd609cc",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "direction": "borrowed",
+      "counterparty": "Cooperative",
+      "amount": 150000.0,
+      "amount_paid": 0.0,
+      "due_date": "2025-09-30",
+      "status": "overdue",
+      "description": "Equipment financing",
+      "id": "e7a944f60c39",
+      "created_at": "2026-06-10T16:26:34"
+    },
+    {
+      "direction": "lent",
+      "counterparty": "Tunde",
+      "amount": 40000.0,
+      "amount_paid": 40000.0,
+      "due_date": "2025-07-10",
+      "status": "paid",
+      "description": "Lent for rent",
+      "id": "a2809ca1d408",
+      "created_at": "2026-06-10T16:26:34"
+    }
+  ]
+}
