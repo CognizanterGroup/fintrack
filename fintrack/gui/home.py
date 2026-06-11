@@ -143,13 +143,14 @@ class HomeWindow(QWidget):
 
         card = QFrame()
         card.setObjectName("AuthCard")
-        card.setMaximumWidth(430)
+        card.setMinimumWidth(460)
+        card.setMaximumWidth(540)
         cl = QVBoxLayout(card)
-        cl.setContentsMargins(34, 32, 34, 30)
-        cl.setSpacing(9)
+        cl.setContentsMargins(44, 42, 44, 38)
+        cl.setSpacing(11)
 
         mark = QLabel()
-        mark.setPixmap(icons.logo_pixmap(52))
+        mark.setPixmap(icons.logo_pixmap(64))
         mark.setAlignment(Qt.AlignCenter)
         cl.addWidget(mark)
         cl.addSpacing(4)
@@ -163,7 +164,7 @@ class HomeWindow(QWidget):
         self.subtitle.setObjectName("AuthSub")
         self.subtitle.setAlignment(Qt.AlignCenter)
         cl.addWidget(self.subtitle)
-        cl.addSpacing(14)
+        cl.addSpacing(20)
 
         cl.addWidget(self._field_label("user", "Username"))
         self.user_input = QLineEdit()
@@ -185,7 +186,7 @@ class HomeWindow(QWidget):
         cl.addWidget(self.confirm_label)
         cl.addWidget(self.confirm_input)
 
-        cl.addSpacing(12)
+        cl.addSpacing(16)
         self.submit_btn = QPushButton("Log in")
         self.submit_btn.setObjectName("AuthSubmit")
         self.submit_btn.setCursor(Qt.PointingHandCursor)
@@ -304,16 +305,20 @@ class HomeWindow(QWidget):
             background: {p.CARD}; border: 1px solid {p.BORDER};
             border-radius: 18px;
         }}
-        #AuthTitle {{ font-size: 24px; font-weight: 800; color: {p.TEXT}; }}
-        #AuthSub {{ color: {p.TEXT_MUTED}; font-size: 13px; }}
-        #FieldLabel {{ color: {p.TEXT_MUTED}; font-size: 12px;
+        #AuthCard QLineEdit {{
+            padding: 13px 14px; font-size: 15px; border-radius: 10px;
+        }}
+        #AuthTitle {{ font-size: 30px; font-weight: 800; color: {p.TEXT}; }}
+        #AuthSub {{ color: {p.TEXT_MUTED}; font-size: 14px; }}
+        #FieldLabel {{ color: {p.TEXT_MUTED}; font-size: 13px;
                        font-weight: 600; }}
-        #AuthSubmit {{ padding: 12px 16px; font-size: 15px;
+        #AuthSubmit {{ padding: 14px 16px; font-size: 16px;
                        border-radius: 10px; }}
         QPushButton#LinkButton {{
             background: transparent; color: {p.ACCENT_DARK};
             border: none; padding: 2px 4px; font-weight: 700;
+            font-size: 14px;
         }}
         QPushButton#LinkButton:hover {{ color: {p.ACCENT}; }}
-        #DemoHint {{ color: {p.TEXT_MUTED}; font-size: 12px; }}
+        #DemoHint {{ color: {p.TEXT_MUTED}; font-size: 13px; }}
         """
